@@ -1,5 +1,9 @@
-bump-go.sh is a Bash script that bootstraps and updates the Go runtime environment
+# bump-go.sh
+Bump-Go is a Bash script that bootstraps and updates the Go runtime environment for use on Linux hosts.
 
+Documentation comments within the script as general description are listed below:
+
+```
  Purpose:
    - Ensure Go is installed under /usr/local/go
    - If Go already exists, update it to the latest stable release
@@ -33,3 +37,4 @@ bump-go.sh is a Bash script that bootstraps and updates the Go runtime environme
    - Checksums are fetched from https://dl.google.com/go/<archive>.sha256
    - PATH is exposed to all users via /etc/profile.d/go.sh so that
      /usr/local/go/bin is available after a fresh login shell.
+```
